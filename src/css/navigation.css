@@ -1,0 +1,85 @@
+.navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 4rem;
+  transition: 0.5s;
+  z-index: 2;
+  font-size: 2rem;
+}
+
+.navigation.blur {
+  background-color: var(--lowOpacityBlack);
+  backdrop-filter: blur(1rem);
+}
+
+.navigation img {
+  width: 12rem;
+}
+
+.navigation .menu {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  color: var(--white);
+}
+
+.navigation .menu li {
+  transition: 0.3s;
+}
+
+.navigation .menu li:hover {
+  transform: translateY(-0.5rem);
+}
+
+.search-box {
+  display: flex;
+  height: 5rem;
+}
+
+.search-box.active button {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.search-box.active input {
+  width: 30rem;
+  padding-right: 1.5rem;
+}
+
+.search-box input {
+  transition: 0.3s;
+  border-radius: 0 1.2rem 1.2rem 0;
+  background-color: var(--lowOpacityBlack);
+  color: var(--white);
+  width: 0;
+}
+
+.search-box input::placeholder {
+  font-size: 1.8rem;
+}
+
+.search-box button {
+  transition: 0.3s;
+  position: relative;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: var(--lowOpacityBlack);
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.btn {
+  z-index: 1;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  background-color: var(--brown);
+  color: var(--white);
+}

@@ -1,0 +1,106 @@
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 50%);
+  margin-top: -5rem;
+  align-items: center;
+}
+
+.hero > .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+.hero > .left > .info {
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--white);
+  text-shadow: 0 0.5rem 1rem var(--lowOpacityBlack);
+}
+
+.hero > .left > .info h2 {
+  font-size: 9.8rem;
+  opacity: 0;
+}
+
+.hero > .left > .info h2.fade {
+  animation: fade 0.5s forwards;
+}
+
+.hero > .left > .info img {
+  width: 10rem;
+}
+
+.hero > .left > .info small {
+  opacity: 0;
+}
+
+.hero > .left > .info small.fade {
+  animation: fade 0.5s forwards;
+}
+
+.hero > .left > .info small .score {
+  font-size: 7rem;
+  margin-right: 1rem;
+}
+
+.hero > .left > .info small .measure {
+  font-size: 5rem;
+}
+
+.left .goToPage {
+  transition: 0.3s;
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(0.5rem);
+  background: var(--lowOpacityWhite);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.left .goToPage:hover {
+  transform: scale(1.1);
+}
+
+.left .goToPage::after,
+.left .goToPage::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+}
+
+.left .goToPage::after {
+  width: 130%;
+  height: 130%;
+}
+.left .goToPage::before {
+  width: 160%;
+  height: 160%;
+}
+
+.header-slider {
+  opacity: 0;
+}
+
+.header-slider.fade {
+  animation: fade 0.5s forwards;
+}
+
+.hero > .slider {
+  overflow-x: scroll;
+}
+
+.hero > .slider::-webkit-scrollbar {
+  width: 0;
+}

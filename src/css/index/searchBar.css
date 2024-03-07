@@ -1,0 +1,10 @@
+.advance-search {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 12rem;
+  background-color: var(--darkBlue);
+  border-radius: 3rem;
+}

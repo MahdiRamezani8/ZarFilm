@@ -1,0 +1,13 @@
+:root {
+  --lowOpacityBlack: #000000a8;
+  --white: #fff;
+  --brown: #82490d;
+  --orange: #eb8307;
+  --lowOpacityWhite: hsla(0, 0%, 86%, 0.102);
+  --darkBlue: #141821;
+  --darkerBlue: #0a0d1066;
+  --black: #000;
+  --darkBrown: #f4a5461a;
+  --green: #1A6623;
+  --lightGreen: #1d7e29;
+}

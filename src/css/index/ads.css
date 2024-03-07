@@ -1,0 +1,43 @@
+.ads {
+  width: 100%;
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+
+.ads h1 {
+  text-align: center;
+  font-size: 6rem;
+  grid-column: 1/-1;
+}
+
+.ads div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ads div button {
+  width: 32rem;
+  border-radius: 1rem;
+  background-color: var(--darkerBlue);
+  padding: 2rem;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.ads div button i {
+  font-size: 2rem;
+}
+
+@media (max-width: 810px) {
+  .ads h1 {
+    font-size: 5rem;
+  }
+}

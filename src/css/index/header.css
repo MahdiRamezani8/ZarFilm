@@ -1,0 +1,72 @@
+@import url("hero.css");
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 85dvh;
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10rem);
+  z-index: -1;
+}
+
+.wallpaper img {
+  border-radius: 0 0 5rem 5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0;
+}
+
+.wallpaper img.fade {
+  animation: fade 0.5s forwards;
+}
+
+.wallpaper::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--lowOpacityBlack) 50%
+  );
+}
+
+.goToSearch {
+  position: absolute;
+  bottom: 5rem;
+  background-color: var(--lowOpacityBlack);
+  backdrop-filter: blur(0.5rem);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--white);
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.goToSearch:hover {
+  transform: translateY(-1rem) scale(1.1);
+}

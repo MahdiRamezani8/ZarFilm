@@ -1,0 +1,73 @@
+@import "gallery.css";
+
+.category {
+  width: 100%;
+  padding-inline: 4rem;
+}
+
+.category .head {
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  color: var(--white);
+}
+
+.category .head .title {
+  width: 50rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.category .head .title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  background-color: var(--darkBrown);
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  font-size: 4rem;
+}
+
+.category .head .title p {
+  font-size: 1.7rem;
+  color: #ffffffae;
+}
+
+.category .head .left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.category .head .left div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2.5rem;
+  background-color: var(--darkBrown);
+  border-radius: 50%;
+}
+
+.category .slider {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.category .slider:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+.category .slider:last-child{
+  margin-bottom: 4rem;
+}
+
+.category .slider .slide {
+  min-width: auto;
+}
