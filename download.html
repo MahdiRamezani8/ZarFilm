@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loading ...</title>
+    <link rel="icon" href="src/images/favicon.ico" />
+    <link rel="stylesheet" href="src/css/download/index.css" />
+    <script defer type="module" src="src/js/download/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <section class="wallpaper">
+        <img class="cover" src="" alt="" />
+      </section>
+      <section class="right">
+        <section class="cover">
+          <img src="" alt="cover" />
+          <span class="transparent"></span>
+        </section>
+        <section class="info">
+          <h1>دانلود سریال <span class="name"></span></h1>
+          <ul class="genres list">
+            ژانرها:
+          </ul>
+          <p class="description"></p>
+          <ul class="list actors">
+            ستارگان:
+          </ul>
+        </section>
+      </section>
+      <section class="left">
+        <section class="top">
+          <section class="rating">
+            <img src="src/images/imdb.png" alt="imdb logo" />
+            <span class="imdbRating"></span>
+          </section>
+          <section class="interaction">
+            <button class="save">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+            <button class="like">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </section>
+        </section>
+
+        <section class="buttons">
+          <button class="btn btn-gray">مشاهده تریلر</button>
+
+          <button class="btn btn-orange">پخش قسمت آخر</button>
+        </section>
+      </section>
+    </header>
+
+    <section class="tabbar">
+      <nav class="tabs-list">
+        <button data-category="download-box" class="active">
+          <i class="fa-solid fa-download"></i> باکس دانلود
+        </button>
+        <button data-category="more-info">
+          <i class="fa-solid fa-exclamation"></i> اطلاعات بیشتر
+        </button>
+      </nav>
+
+      <section class="tabs-container">
+        <div class="download-box tab active" data-category="download-box">
+          <header class="tab-head">باکس دانلود</header>
+          <ul>
+            <li>
+              <header class="head">
+                <h3>فصل 1</h3>
+                <span>تکمیل شده</span>
+                <button class="open_drop-down">
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </header>
+              <div class="drop-down_wrapper">
+                <ul class="drop-down">
+                  <li class="drop-down_item">
+                    <span class="subtitle"> زیرنویس </span>
+                    <header class="drop-down_item-head">
+                      <p>
+                        <span>کیفیت : BluRay 1080p - ZarFilm</span>
+                        <span>تعداد قسمت : 22 </span>
+                        <span>630 مگابایت</span>
+                      </p>
+                      <button class="open_drop-down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </button>
+                    </header>
+                    <div class="drop-down_wrapper">
+                      <ul class="drop-down inner_drop-down">
+                        <li class="drop-down_box-item">قسمت 1</li>
+                        <li class="drop-down_box-item">قسمت 1</li>
+                        <li class="drop-down_box-item">قسمت 1</li>
+                        <li class="drop-down_box-item">قسمت 1</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="more-info tab" data-category="more-info">
+          <ul class="infos-list">
+            <li class="info">شبکه HBO</li>
+            <li class="info">سال‌تولید 2024</li>
+            <li class="info">زبان English</li>
+            <li class="info">رده‌سنی TV-MA</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

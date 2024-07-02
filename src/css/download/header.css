@@ -1,0 +1,161 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 85dvh;
+  padding-inline: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 922px) {
+  .header {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right > .cover {
+    width: 20rem;
+  }
+
+  .header .left {
+    margin-top: 0;
+  }
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: blur(10rem);
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  gap: 4rem;
+}
+
+.right > .cover {
+  min-width: 33rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.right .cover img {
+  width: 100%;
+  z-index: -1;
+}
+
+.right .cover .transparent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, transparent 50%, #000);
+  z-index: 2;
+}
+
+.right .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+}
+
+.right .info h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.right .info .list {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.right .info .list li {
+  height: 3.5rem;
+  font-size: 2rem;
+  padding-top: 0.3rem;
+  padding-inline: 1rem;
+  border: 0.1rem solid #ffffff6e;
+  border-radius: 0.5rem;
+}
+
+.right .info .description {
+  width: 80%;
+  font-size: 2.3rem;
+  margin-block: 6rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4rem;
+  margin-top: -26rem;
+}
+
+.left .top {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .top .rating {
+  display: flex;
+  align-items: center;
+}
+
+.left .top .rating .imdbRating {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.left .top img {
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+.left .top .interaction {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.left .top .interaction button {
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 0.1rem solid #ffffff6e;
+  border-radius: 0.8rem;
+  font-size: 2.2rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left .buttons {
+  display: flex;
+  gap: 1.5rem;
+}

@@ -3,11 +3,12 @@
   --white: #fff;
   --brown: #82490d;
   --orange: #eb8307;
-  --lowOpacityWhite: hsla(0, 0%, 86%, 0.102);
+  --lowOpacityWhite: #dbdbdb1a;
   --darkBlue: #141821;
   --darkerBlue: #0a0d1066;
   --black: #000;
   --darkBrown: #f4a5461a;
+  --gray: #1d2129;
   --green: #1A6623;
   --lightGreen: #1d7e29;
 }

@@ -1,3 +1,6 @@
+const API = "https://www.omdbapi.com/";
+const APIKey = "e82b2dba";
+
 const navigationHTML = `
     <nav class="navigation">
       <img src="src/images/logo.png" alt="logo" />
@@ -26,25 +29,23 @@ const navigationHTML = `
 const footerHTML = `
     <footer class="footer">
         <header class="head">
-        <button class="goUp"><i class="fa-solid fa-angle-up"></i></button>
-        <ul class="list">
+         <button class="goUp"><i class="fa-solid fa-angle-up"></i></button>
+          <ul class="list">
             <li class="item"><a href="#">خرید اشتراک</a></li>
             <li class="item"><a href="#">پخش آنلاین</a></li>
             <li class="item"><a href="#">سوالات متداول</a></li>
             <li class="item"><a href="#">قوانین</a></li>
             <li class="item"><a href="#">تماس با ما</a></li>
-        </ul>
-        <div class="icons">
+         </ul>
+         <div class="icons">
             <a href="">
             <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="">
             <i class="fa-brands fa-telegram"></i>
             </a>
-        </div>
-        <a class="download-btn" href=""
-            >دانلود اپلیکیشن <i class="fa-brands fa-android"></i
-        ></a>
+          </div>
+          <a class="download-btn">دانلود اپلیکیشن <i class="fa-brands fa-android"></i></a>
         </header>
         <p>
         This is a clone page of zarfilm for a training website. developed by
@@ -98,6 +99,7 @@ const goToTopEl = document.querySelector(".goUp");
 goToTopEl.addEventListener("click", handleGoToTop);
 
 function handleGoToTop() {
-  console.log("a");
   headerEl.scrollIntoView({ behavior: "smooth" });
 }
+
+export { API, APIKey };

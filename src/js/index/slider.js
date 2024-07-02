@@ -19,22 +19,9 @@ export async function sliderMaker(el, arr, API, APIkey) {
       // Destructure the movie properties
       const { Genre, Poster, Title, Runtime, imdbRating, Year } = movie;
 
-      function serialer(obj) {
-        return Object.keys(obj)
-          .map(function (key) {
-            return (
-              key +
-              "=" +
-              (typeof obj[key] === "string" ? obj[key] : serialer(obj[key]))
-            );
-          })
-          .join("&");
-        
-      }
-
       // Create the HTML template for the movie card
       const html = `
-        <div class="header-slider-slide slide splide__slide" data-info="${serialer(movie)}">
+        <div class="header-slider-slide slide splide__slide" data-info="${Title}">
           <div class="slide-info">
             <div class="geners">
               ${Genre.split(",").map((g) => `<span>${g}</span>`)}
@@ -91,5 +78,5 @@ export async function sliderMaker(el, arr, API, APIkey) {
 }
 
 function goToDownloadPage() {
-  location.assign(`download.html?info=${this.dataset.info}`)
+  location.assign(`download.html?Title=${this.dataset.info}`)
 }
