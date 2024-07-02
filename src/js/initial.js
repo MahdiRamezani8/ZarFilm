@@ -3,7 +3,7 @@ const APIKey = "e82b2dba";
 
 const navigationHTML = `
     <nav class="navigation">
-      <img src="src/images/logo.png" alt="logo" />
+      <img src="${require('../images/logo.png')}" alt="logo" />
       <ul class="menu">
         <li><a href="">دسته بندی</a></li>
         <li><a href="">هنرمندان</a></li>

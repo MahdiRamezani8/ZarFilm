@@ -1,0 +1,17 @@
+{
+  "name": "zar-film",
+  "version": "1.0.0",
+  "description": "Zarfilm Main Site: zarfilm.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./*.html",
+    "build": "parcel build ./*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "parcel": "^2.12.0"
+  }
+}

@@ -16,8 +16,12 @@ async function fetchInfo(API, APIKey) {
     const { Genre, Poster, Title, Plot, Actors, imdbRating } = movie;
 
     document.querySelector("title").innerHTML = `zarfilm - ${Title}`;
-    document.querySelector(".wallpaper .cover").src = Poster;
-    document.querySelector(".cover>img").src = Poster;
+    document.querySelector(
+      ".wallpaper .cover"
+    ).style.backgroundImage = `url(${Poster})`;
+    document.querySelector(
+      ".cover>div"
+    ).style.backgroundImage = `url(${Poster})`;
     document.querySelector(".info .name").innerHTML = Title;
     document.querySelector(".info .description").innerHTML = Plot;
     document.querySelector(

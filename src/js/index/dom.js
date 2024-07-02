@@ -1,4 +1,6 @@
-const headerWallpaper = document.querySelector(".wallpaper>img");
+import Splide from "@splidejs/splide";
+
+const headerWallpaper = document.querySelector(".wallpaper>div");
 const ratingEl = document.querySelector(".score");
 const titleEl = document.querySelector(".title");
 const splideSliderEl = document.querySelector(".header-slider");
@@ -25,7 +27,7 @@ function changeSlide(info) {
   ratingEl.parentElement.classList.remove("fade");
   titleEl.classList.remove("fade");
 
-  headerWallpaper.src = info.Poster;
+  headerWallpaper.style.backgroundImage = `url(${info.Poster})`;
   ratingEl.innerHTML = info.imdbRating;
   titleEl.innerHTML = info.Title;
   setTimeout(() => {
@@ -34,6 +36,5 @@ function changeSlide(info) {
     headerWallpaper.classList.add("fade");
   }, 50);
 }
-
 
 export { mountSplide };
